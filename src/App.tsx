@@ -3,6 +3,7 @@ import { About } from "./pageComponents/about/About";
 import "./App.scss";
 import logo from "./assets/logo.png"
 import { PrincipalPage } from './principalPage/PrincipalPage';
+import { CardsPage } from './pageComponents/cardsPage/CardsPage';
 
 
 export const App: React.FC = () => {
@@ -22,7 +23,9 @@ export const App: React.FC = () => {
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path='/' element={<PrincipalPage />} />
-        <Route path="card/:id" element={<About/>} />
+        <Route path='card/:id' element={<CardsPage />} />
+        
+      
         
 
 

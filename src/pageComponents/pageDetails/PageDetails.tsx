@@ -6,8 +6,7 @@ import { GalleryImg } from '../galleryImg/GalleryImg';
 export const PageDetails:React.FC = ()=>{
     return(
         <>
-        img
-        <GalleryImg/>
+        
         </>
     )
 }
