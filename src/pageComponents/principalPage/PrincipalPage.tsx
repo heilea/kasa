@@ -1,7 +1,7 @@
 import React from 'react';
-import mainBanner from "../assets/mainBanner.png";
+import mainBanner from "../../assets/mainBanner.png";
 import "./PrincipalPage.scss";
-import cards_data from "../pageComponents/logements.json";
+import cards_data from "../logements.json";
 import { Link } from "react-router-dom";
 
 export interface CardData {
@@ -26,7 +26,8 @@ export interface CardData {
 export const PrincipalPage: React.FC = () => {
     return (
         <div className="PrincipalPage">
-            <div className="mainBanner"><img src={mainBanner} alt="Photo de mer" />
+            <div className="mainBanner">
+                <img src={mainBanner} alt="Photo de mer" />
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
             <div className="cards-container">

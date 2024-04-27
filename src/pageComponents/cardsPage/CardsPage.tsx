@@ -1,7 +1,7 @@
 import "./CardsPage.scss";
 import cards_data from "../logements.json";
 import { Navigate, useParams } from "react-router-dom";
-import { CardData } from "../../principalPage/PrincipalPage";
+import { CardData } from "../principalPage/PrincipalPage";
 import { GalleryImg } from "../galleryImg/GalleryImg";
 import { Collapse } from "../collapse/Collapse";
 
@@ -11,8 +11,8 @@ export const CardsPage = () => {
     const { id } = useParams()
     const dataGroup = cards_data.find((dataGroup: CardData) => dataGroup.id === id)
 
-    if (!dataGroup) {
-        return <Navigate to="/404" />
+    if (!dataGroup) {    // si dataGroup est undefined parce que l’identifiant extrait de l’URL avec useParams() ne correspond à aucun groupe de données dans cards_data, alors !dataGroup sera true
+        return <Navigate to="*" />      
     } else {
         return (
             <div className="CardsPage">
@@ -39,10 +39,11 @@ export const CardsPage = () => {
                             </div>
                             <div className='stars-rating'>
                                 {Array.from({ length: 5 }, (_, index) => (
+                                    
                                     <i
                                         key={index}
-                                        className={`fa-solid fa-star ${index < dataGroup.rating ? 'active-star' : 'disabled-star'}`}
-                                    >
+                                        className={`fa-solid fa-star ${index < +dataGroup.rating ? 'active-star' : 'disabled-star'}`} 
+                                    > 
                                     </i>
                                 ))}
                             </div>

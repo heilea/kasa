@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { CardData } from "../../principalPage/PrincipalPage";
+import { CardData } from "../principalPage/PrincipalPage";
 import cards_data from "../logements.json";
 import "./GalleryImg.scss";
 
 
 interface GalleryImgProps {
-    id: string;
+    id?: string;
 }
 
 export const GalleryImg:React.FC<GalleryImgProps> = ({id}) => {
@@ -15,12 +15,12 @@ export const GalleryImg:React.FC<GalleryImgProps> = ({id}) => {
                 setCurrentIndexImage((currentIndexImage +1)% images.length)
             }
             const prevImage = () => {
-                setCurrentIndexImage ((currentIndexImage -1)% images.length)
+                setCurrentIndexImage ((currentIndexImage -1 + images.length)% images.length)
             }
     return (
         <div className="imgDiv">
                 {images.map((imgUrl, index) => (
-                    <img src={imgUrl} alt="Photo descriptive" key={index} className={index===currentIndexImage? "active": "disabled"}/>
+                    <img src={imgUrl} alt="Photo descriptive" key={index} className={index===currentIndexImage? "active":"disabled"}/>
                 ))
                 }
                 {images.length > 1 &&

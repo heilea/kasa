@@ -21,5 +21,98 @@
             height: 100%;
             object-fit: cover;
         }
+    } 
+
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 2%;
+        
+        
+        .serie{
+          width: 60vw;
+        }
+        /*Collapse - défini dans collapse.scss*/
+      }
+}
+/****** TABLET ******/
+@media (min-width: 768px) and (max-width: 1024px){
+    .About{
+      min-height: 72vh;
+      .banner{
+        width: 86%;
+        height: 15vh;
+        border-radius: 10px;
+      }
+      .content{
+        .serie{
+          width: 86%;
+          margin-top: 8%;
+          h3{
+            font-size: 3.5vw;
+            padding-left: 3%;
+            i{
+              font-size: 4vw;
+              right: 3%;
+            }
+          }
+          p{
+            width: 95%;
+            font-size: 3vw;
+          }
+          &.active{
+            //height: 100%;
+            i{
+              rotate: -180deg;
+            }
+            p{
+              //transition-duration: $duration-time;
+              transform:translateY(0);
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  /****** MOBILE ******/
+  @media (max-width: 768px){
+    .About{
+      .banner{
+        width: 90%;
+        height: 12vh;
+        border-radius: 10px;
+      }
+      .content{
+        .serie{
+          width: 90%;
+          margin-top: 8%;
+          h3{
+            font-size: 4.5vw;
+            padding-left: 3%;
+            i{
+              font-size: 5vw;
+              right: 3%;
+            }
+          }
+          p{
+            width: 95%;
+            font-size: 3.5vw;
+          }
+          &.active{
+            //height: 100%;
+            i{
+              rotate: -180deg;
+            }
+            p{
+              //transition-duration: $duration-time;
+              transform:translateY(0);
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
 }

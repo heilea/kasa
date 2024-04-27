@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import { About } from "./pageComponents/about/About";
 import "./App.scss";
 import logo from "./assets/logo.png"
-import { PrincipalPage } from './principalPage/PrincipalPage';
+import { About } from "./pageComponents/about/About";
+import { PrincipalPage } from './pageComponents/principalPage/PrincipalPage';
 import { CardsPage } from './pageComponents/cardsPage/CardsPage';
-
+import { Error404 } from "./pageComponents/error404/Error404";
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 
 export const App: React.FC = () => {
   return (
@@ -24,11 +24,8 @@ export const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path='/' element={<PrincipalPage />} />
         <Route path='card/:id' element={<CardsPage />} />
+        <Route path="*" element={<Error404/>} />
         
-      
-        
-
-
       </Routes>
       <footer>
         <img src={logo} alt="logo" />

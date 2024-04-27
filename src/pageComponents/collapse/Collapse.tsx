@@ -1,9 +1,9 @@
-import { useRef, useState } from "react";
+import { ReactNode, useRef, useState } from "react";
 import "./Collapse.scss";
 
-interface CollapseProps { 
+export interface CollapseProps { 
     title:string; 
-    content:string;
+    content:ReactNode;
 
 }
 
