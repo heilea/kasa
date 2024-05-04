@@ -1,9 +1,10 @@
 import { ReactNode, useRef, useState } from "react";
 import "./Collapse.scss";
 
+//On cree une interface pour definir les props
 export interface CollapseProps { 
     title:string; 
-    content:ReactNode;
+    content:ReactNode; //Utilisation de reactnode pour designer tout element utilise en react
 
 }
 
