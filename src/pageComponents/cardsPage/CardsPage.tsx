@@ -12,7 +12,7 @@ export const CardsPage = () => {
     const dataGroup = cards_data.find((dataGroup: CardData) => dataGroup.id === id)
 
     if (!dataGroup) {    // si dataGroup est undefined parce que l’identifiant extrait de l’URL avec useParams() ne correspond à aucun groupe de données dans cards_data, alors !dataGroup sera true
-        return <Navigate to="*" />      
+        return <Navigate to="/error404" />      
     } else {
         return (
             <div className="CardsPage">
