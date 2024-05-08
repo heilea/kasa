@@ -9,9 +9,9 @@
 
     
     .aboutBanner{
-        width: 70%;
-        height: 25vh;
-        border-radius: 25px;
+        width: clamp(335px, 75%, 1240px);
+        height: clamp(111px, 111px, 111px);
+        border-radius: 18px;
         overflow: hidden;
         margin-bottom: 1%;
 
@@ -41,7 +41,7 @@
 @media (min-width: 768px) and (max-width: 1024px){
     .About{
       min-height: 72vh;
-      .banner{
+      .aboutBanner{
         width: 86%;
         height: 15vh;
         border-radius: 10px;
@@ -79,10 +79,14 @@
   }
   /****** MOBILE ******/
   @media (max-width: 768px){
+
+    body #root header {
+      width: 100%;
+    }
     .About{
-      .banner{
-        width: 90%;
-        height: 12vh;
+      .aboutBanner{
+        width: clamp(335px, 90%, 1240px);
+        height: clamp(111px, 111px, 111px);
         border-radius: 10px;
       }
       .content{

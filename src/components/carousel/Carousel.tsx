@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { CardData } from "../../pageComponents/principalPage/PrincipalPage";
+import { CardData } from "../../pageComponents/gallery/Gallery";
 import cards_data from "../../pageComponents/logements.json";
-import "./GalleryImg.scss";
+import "./Carousel.scss";
 
 
 interface GalleryImgProps {
     id?: string;
 }
 
-export const GalleryImg:React.FC<GalleryImgProps> = ({id}) => {
+export const Carousel:React.FC<GalleryImgProps> = ({id}) => {
             const images = (cards_data as CardData[]).find( card => card.id === id)?.pictures || [];
             const [currentIndexImage , setCurrentIndexImage] = useState<number>(0);
             const nextImage = () => {

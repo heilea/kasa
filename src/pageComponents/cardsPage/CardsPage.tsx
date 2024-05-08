@@ -1,8 +1,8 @@
 import "./CardsPage.scss";
 import cards_data from "../logements.json";
 import { Navigate, useParams } from "react-router-dom";
-import { CardData } from "../principalPage/PrincipalPage";
-import { GalleryImg } from "../../components/galleryImg/GalleryImg";
+import { CardData } from "../gallery/Gallery";
+import { Carousel } from "../../components/carousel/Carousel";
 import { Collapse } from "../../components/collapse/Collapse";
 
 
@@ -16,7 +16,7 @@ export const CardsPage = () => {
     } else {
         return (
             <div className="CardsPage">
-                <GalleryImg id={id} />
+                <Carousel id={id} />
                 <div className="info">
                     <div className='sec12'>
                         <div className='info-section info-section1'>

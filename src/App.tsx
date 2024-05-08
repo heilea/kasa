@@ -1,7 +1,7 @@
 import "./App.scss";
 import logo from "./assets/logo.png"
 import { About } from "./pageComponents/about/About";
-import { PrincipalPage } from './pageComponents/principalPage/PrincipalPage';
+import { Gallery } from './pageComponents/gallery/Gallery';
 import { CardsPage } from './pageComponents/cardsPage/CardsPage';
 import { Error404 } from "./pageComponents/error404/Error404";
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
@@ -24,7 +24,7 @@ export const App: React.FC = () => {
       </header>
       <Routes>
         <Route path="/about" element={<About />} />
-        <Route path='/' element={<PrincipalPage />} />
+        <Route path='/' element={<Gallery />} />
         <Route path='card/:id' element={<CardsPage />} />
         <Route path="/error404" element={<Error404 />} />
         <Route path="*" element={<Error404/>} />
