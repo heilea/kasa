@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CardData } from "../principalPage/PrincipalPage";
-import cards_data from "../logements.json";
+import { CardData } from "../../pageComponents/principalPage/PrincipalPage";
+import cards_data from "../../pageComponents/logements.json";
 import "./GalleryImg.scss";
 
 

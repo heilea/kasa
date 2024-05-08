@@ -1,7 +1,7 @@
 import React from 'react';
 import "./About.scss";
 import aboutBanner from "../../assets/aboutBanner.png";
-import { Collapse } from '../collapse/Collapse';
+import { Collapse } from '../../components/collapse/Collapse';
 import aboutContent from '../../string.json';
 
 

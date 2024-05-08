@@ -2,8 +2,8 @@ import "./CardsPage.scss";
 import cards_data from "../logements.json";
 import { Navigate, useParams } from "react-router-dom";
 import { CardData } from "../principalPage/PrincipalPage";
-import { GalleryImg } from "../galleryImg/GalleryImg";
-import { Collapse } from "../collapse/Collapse";
+import { GalleryImg } from "../../components/galleryImg/GalleryImg";
+import { Collapse } from "../../components/collapse/Collapse";
 
 
 export const CardsPage = () => {
