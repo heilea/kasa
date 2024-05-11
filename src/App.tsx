@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 export const App: React.FC = () => {
   return (
     //Utilisation de Browser Router de React router dom
+    <>
     <Router>
       <header>
         <img src={logo} alt="Logo de kasa" />
@@ -30,11 +31,12 @@ export const App: React.FC = () => {
         <Route path="*" element={<Error404/>} />
         
       </Routes>
-      <footer>
-        <img src={logo} alt="logo" />
-        <p>© 2020 Kasa. All rights reserved</p>
-      </footer>
     </Router>
+          <footer>
+          <img src={logo} alt="logo" />
+          <p>© 2020 Kasa. All rights reserved</p>
+        </footer>
+        </>
   )
 }
 
