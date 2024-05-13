@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 
     
     .aboutBanner{
@@ -81,8 +82,10 @@
 
     body #root header {
       width: 100%;
+      
     }
     .About{
+      padding-bottom: 2%;
       .aboutBanner{
         width: clamp(335px, 90%, 1240px);
         height: 111px;
