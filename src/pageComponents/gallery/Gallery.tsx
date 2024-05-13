@@ -25,7 +25,7 @@ export interface CardData {
 
 export const Gallery: React.FC = () => {
     return (
-        <div className="PrincipalPage">
+        <div className="gallery">
             <div className="mainBanner">
                 <img src={mainBanner} alt="Photo de mer" />
                 <h1>Chez vous, partout et ailleurs</h1>

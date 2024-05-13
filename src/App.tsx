@@ -20,7 +20,7 @@ export const App: React.FC = () => {
             className={({ isActive }) => isActive ? "active-link" : ""} >
             Accueil</NavLink>
 
-          <NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : ""} >À Propos</NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : ""} >A Propos</NavLink>
         </nav>
       </header>
       <Routes>

@@ -1,5 +1,5 @@
-.PrincipalPage{
-    font-family: "Montserrat", sans-serif;
+.gallery{
+    
   min-height: 67vh;
   width: 100vw;
   display: flex;
@@ -85,7 +85,7 @@
 
 /****** TABLET ******/
 @media (min-width: 768px) and (max-width: 1024px){
-  .PrincipalPage{
+  .gallery{
     .mainBanner{
       width: 86%;
       height: 15vh;
@@ -127,7 +127,7 @@
 }
 /****** MOBILE ******/
 @media (max-width: 768px){
-  .PrincipalPage{
+  .gallery{
     .mainBanner{
       width: 90%;
       height: 12vh;

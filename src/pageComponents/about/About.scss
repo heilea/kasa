@@ -9,7 +9,7 @@
     
     .aboutBanner{
         width: clamp(335px, 75%, 1240px);
-        height: clamp(111px, 111px, 111px);
+        height: 223px;
         border-radius: 18px;
         overflow: hidden;
         margin-bottom: 1%;
@@ -85,7 +85,7 @@
     .About{
       .aboutBanner{
         width: clamp(335px, 90%, 1240px);
-        height: clamp(111px, 111px, 111px);
+        height: 111px;
         border-radius: 10px;
       }
       .content{
