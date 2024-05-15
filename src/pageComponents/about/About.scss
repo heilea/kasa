@@ -1,7 +1,7 @@
 .About{
     font-family: "Montserrat",sans-serif;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -80,11 +80,7 @@
   }
   /****** MOBILE ******/
   @media (max-width: 768px){
-
-    body #root header {
-      width: 100%;
-      
-    }
+    
     .About{
       padding-bottom: 2%;
       .aboutBanner{

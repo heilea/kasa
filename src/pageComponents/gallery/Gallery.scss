@@ -128,6 +128,7 @@
 /****** MOBILE ******/
 @media (max-width: 768px){
   .gallery{
+    width: 100%;
     .mainBanner{
       width: 90%;
       height: 12vh;
@@ -159,7 +160,7 @@
           width: 100%;
 
           h2{
-            font-size: 5vw;
+            font-size: 18px;
           }
         }
       }
