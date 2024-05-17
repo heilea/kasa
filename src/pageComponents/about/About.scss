@@ -9,7 +9,7 @@
 
     
     .aboutBanner{
-        width: clamp(335px, 75%, 1240px);
+        width: 90%;
         height: 223px;
         border-radius: 18px;
         
@@ -19,6 +19,7 @@
         img{
             width: 100%;
             height: 100%;
+            border-radius: 10px;
             object-fit: cover;
         }
     } 
@@ -29,11 +30,10 @@
         flex-direction: column;
         justify-content: space-around;
         margin-bottom: 2%;
-        min-height: 34vh;
         
         
         .serie{
-          width: 60vw;
+          width: 75vw;
         }
         /*Collapse - défini dans collapse.scss*/
       }
@@ -84,21 +84,20 @@
     .About{
       padding-bottom: 2%;
       .aboutBanner{
-        width: clamp(335px, 90%, 1240px);
+        width: 90%;
         height: 111px;
         border-radius: 10px;
       }
       .content{
+        margin-top: 2%;
         .serie{
           width: 90%;
-          margin-top: 8%;
+          
           h3{
-            font-size: 4.5vw;
-            padding-left: 3%;
-            i{
-              font-size: 5vw;
-              right: 3%;
-            }
+              i{
+                font-size: 5vw;
+                right: 3%;
+              }
           }
           p{
             width: 95%;

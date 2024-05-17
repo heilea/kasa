@@ -8,15 +8,16 @@
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
 
-  .img-div {
+  .imgDiv {
     position: relative;
     overflow: hidden;
     border-radius: 25px;
-    width: 70%;
-    aspect-ratio: 1/0.415;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 415px;
+
 
     img {
       width: 100%;

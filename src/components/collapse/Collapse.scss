@@ -12,19 +12,20 @@ $duration-time: 1s;
         border-radius: 5px;
         position: relative;
         color: white;
-        padding-left: 1%;
+        padding-left: 2%;
         font-size: 1.2vw;
         display: flex;
         align-items: center;
-        height: 5vh;
+        height: 4.5vh;
         margin: 0;
         z-index: 2;
 
         i {
             position: absolute;
             right: 1%;
-            font-size: 1.2vw;
+            font-size: 1.5rem;
             cursor: pointer;
+            padding-right: 2%;
             transition-duration: $duration-time/2;
         }
     }
@@ -114,10 +115,11 @@ $duration-time: 1s;
 @media (max-width: 768px) {
     .serie {
         width: 90%;
-        margin-top: 8%;
+       
 
         h3 {
-            font-size: 4.5vw;
+            height: 4vh;
+            font-size: 13px;
             padding-left: 3%;
 
             i {
