@@ -20,7 +20,7 @@
     img {
       position: absolute;
       width: 100%;
-      height: calc(100% - 20px);
+      height: 100%;
       object-fit: cover;
       border-radius: 10px;
       filter: brightness(0.7);
@@ -131,13 +131,13 @@
     width: 100%;
     .mainBanner{
       width: 90%;
-      height: 12vh;
+      height: 111px;
       border-radius: 10px;
       justify-content: flex-start;
 
       h1{
-        font-size: 1.2rem;
-        width: 80%;
+        font-size: 1.3rem;
+        width: 60%;
         margin-left: 4%;
         line-height: 2.5vh;
       }

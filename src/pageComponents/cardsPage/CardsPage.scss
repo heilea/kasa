@@ -1,8 +1,6 @@
 .CardsPage {
   margin: 0;
   padding: 0;
-  min-height: 67vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -57,8 +55,9 @@
   }
 
   .info {
-    width: 70%;
-    margin-top: 1%;
+    width: 90%;
+    margin-top: 3%;
+    margin-bottom: 1%;
 
     .sec12 {
       display: flex;
@@ -80,7 +79,7 @@
 
           h2 {
             color: #FF6060;
-            font-size: 2vw;
+            font-size: 2.25rem;
             margin: 0;
             padding: 0;
           }
@@ -89,6 +88,8 @@
             margin: 0;
             padding: 0;
             margin-top: 1%;
+            font-size: 1.13rem;
+            font-weight: 500;
           }
         }
 
@@ -121,11 +122,12 @@
       }
 
       .info-section2 {
-        width: 18%;
+        width: 20%;
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
+    
 
         .account-info {
           height: auto;
@@ -133,35 +135,35 @@
           display: flex;
           align-items: center;
           flex-direction: row;
-          justify-content: center;
+          justify-content: flex-end;
 
           p {
             color: #FF6060;
             margin-right: 5%;
-            font-size: 1.2vw;
+            font-size: 1.125rem;
             text-align: right;
             width: auto;
           }
 
           img {
-            height: 11vh;
-            aspect-ratio: 1/1;
+            height: 7vh;
             border-radius: 50%;
           }
         }
 
         .stars-rating {
-          width: 90%;
+          
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-top: 5%;
-          margin-bottom: 5%;
+          padding-top: 13%;
+          font-size: 2rem;
+          gap: 10px;
 
           i {
             margin: 0;
             padding: 0;
-            font-size: 1vw;
+            font-size: 1.4 em;
           }
 
           .active-star {
