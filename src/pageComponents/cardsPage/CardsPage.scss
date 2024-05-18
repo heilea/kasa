@@ -1,6 +1,7 @@
 .CardsPage {
   margin: 0;
   padding: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -100,22 +101,21 @@
           flex-direction: row;
           justify-content: space-evenly;
           margin-top: 5%;
+          gap: 10px;
 
           p {
-            width: auto;
             background-color: #FF6060;
             color: white;
             margin: 0;
-            margin-right: 0.5vw;
-            padding-left: 1vw;
-            padding-right: 1vw;
-            height: 3vh;
-            min-width: 5vw;
-            font-size: 0.8vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            height: 3.3vh;
+            font-size: 1rem;
+            font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;
+            border-radius: 15px;
             white-space: nowrap;
           }
         }
@@ -127,7 +127,7 @@
         align-items: flex-end;
         flex-direction: column;
         justify-content: flex-end;
-    
+
 
         .account-info {
           height: auto;
@@ -143,6 +143,7 @@
             font-size: 1.125rem;
             text-align: right;
             width: auto;
+            white-space: nowrap;
           }
 
           img {
@@ -152,18 +153,18 @@
         }
 
         .stars-rating {
-          
+
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding-top: 13%;
-          font-size: 2rem;
+          font-size: 1.5rem;
           gap: 10px;
 
           i {
             margin: 0;
             padding: 0;
-            font-size: 1.4 em;
+
           }
 
           .active-star {
@@ -180,7 +181,6 @@
     .info-section3 {
       $duration-time: 1s;
       margin-bottom: 3%;
-      margin-top: 2%;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
@@ -200,7 +200,7 @@
     .img-div {
       border-radius: 10px;
       width: 90%;
-      height: 35vh;
+
 
       .left-right-div {
         span {
@@ -242,7 +242,7 @@
 
             p {
               width: 25%;
-              border-radius: 5px;
+              border-radius: 10px;
               font-size: 2.5vw;
               margin-right: 2vw;
               margin-bottom: 2vw;
@@ -309,12 +309,11 @@
 /****** MOBILE ******/
 @media (max-width: 768px) {
   .CardsPage {
-    width: 100vw;
+    width: 100%;
 
-    .img-div {
+    .imgDiv {
       border-radius: 10px;
-      width: 90%;
-      height: 35vh;
+      height: 255px;
 
       .left-right-div {
         span {
@@ -355,10 +354,8 @@
             justify-content: flex-start;
 
             p {
-              width: 25%;
-              border-radius: 5px;
-              font-size: 2.5vw;
-              margin-right: 2vw;
+              border-radius: 10px;
+              font-size: 0.625rem;
               margin-bottom: 2vw;
             }
           }
@@ -375,7 +372,7 @@
             width: 37%;
 
             img {
-              height: 6vh;
+              height: 3.801vh;
             }
 
             p {
@@ -385,7 +382,8 @@
           }
 
           .stars-rating {
-            width: 30%;
+
+            padding-top: initial;
 
             i {
               font-size: 3vw;

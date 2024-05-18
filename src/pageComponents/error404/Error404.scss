@@ -1,5 +1,5 @@
 .mainDiv {
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
     min-height: 68vh;
     width: 100%;
     display: flex;
@@ -18,6 +18,7 @@
     p {
         color: #FF6060;
         font-size: 2.25rem;
+        font-weight: 500;
     }
 
     a {
@@ -25,6 +26,7 @@
         text-decoration: underline;
         font-size: 1.13rem;
         margin-bottom: 2%;
+        font-weight: 500;
     }
 }
 
@@ -38,6 +40,7 @@
 /****** MOBILE ******/
 @media (max-width: 768px) {
     .mainDiv {
+        margin-bottom: 0px;
         h1 {
             font-size: 30vw;
         }

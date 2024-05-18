@@ -25,23 +25,25 @@ $duration-time: 1s;
             right: 1%;
             font-size: 1.5rem;
             cursor: pointer;
-            padding-right: 2%;
-            transition-duration: $duration-time/2;
+            margin-right: 2%;
+            transition-duration: calc($duration-time/2);
         }
     }
 
     p {
-        transition-duration: $duration-time/2;
+        transition-duration: calc($duration-time/2);
         transform: translateY(-15vh);
         opacity: 0;
         z-index: 1;
-        font-size: 0.9vw;
+        font-size: 1rem;
         margin: 0;
         padding-top: 1.5vh;
         padding-left: 3%;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        background-color: rgba(246, 246, 246, 0.45);
+        border-radius: 5px;
 
         // pour Équipement
         span{
@@ -63,6 +65,7 @@ $duration-time: 1s;
             transition-duration: $duration-time;
             transform: translateY(0);
             opacity: 1;
+
         }
     }
 }
@@ -88,7 +91,7 @@ $duration-time: 1s;
 
         p {
             width: 95%;
-            font-size: 3vw;
+            
 
             span{
                 font-size: 3vw;
@@ -130,11 +133,11 @@ $duration-time: 1s;
 
         p {
             width: 95%;
-            font-size: 3.5vw;
+            
 
             span{
                 font-size: 3.5vw;
-            }
+            }     
         }
 
         &.active {
