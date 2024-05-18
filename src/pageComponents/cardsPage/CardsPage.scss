@@ -195,8 +195,7 @@
 /****** TABLET ******/
 @media (min-width: 768px) and (max-width: 1024px) {
   .CardsPage {
-    width: 100vw;
-
+    
     .img-div {
       border-radius: 10px;
       width: 90%;
@@ -309,7 +308,6 @@
 /****** MOBILE ******/
 @media (max-width: 768px) {
   .CardsPage {
-    width: 100%;
 
     .imgDiv {
       border-radius: 10px;
