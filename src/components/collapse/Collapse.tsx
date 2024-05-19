@@ -17,7 +17,7 @@ export const Collapse:React.FC<CollapseProps> = ({title,content}) => {
         const toggleCollapse = () => {
             setIsActive(!isActive) // on set is active a false
             if (!isActive){
-                setDivHeight(((pRef.current?.offsetHeight || 0) /window.innerHeight)*100 + 5.5) // 
+                setDivHeight(((pRef.current?.offsetHeight || 0) /window.innerHeight)*100 + 5) // 
             } else {
                 setDivHeight(5.5)
             }
