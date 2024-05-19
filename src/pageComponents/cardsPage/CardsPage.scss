@@ -107,15 +107,14 @@
             background-color: #FF6060;
             color: white;
             margin: 0;
-            padding-left: 2vw;
-            padding-right: 2vw;
+            padding: 2px 3vw;
             height: 3.3vh;
             font-size: 1rem;
             font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 15px;
+            border-radius: 10px;
             white-space: nowrap;
           }
         }
@@ -195,7 +194,7 @@
 /****** TABLET ******/
 @media (min-width: 768px) and (max-width: 1024px) {
   .CardsPage {
-    
+
     .img-div {
       border-radius: 10px;
       width: 90%;
@@ -234,7 +233,6 @@
           }
 
           .tags {
-            width: 95%;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
@@ -346,15 +344,13 @@
           }
 
           .tags {
-            width: 95%;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
 
             p {
-              border-radius: 10px;
-              font-size: 0.625rem;
-              margin-bottom: 2vw;
+              font-size: 0.655rem;
+              margin-bottom: 15px;
             }
           }
         }
