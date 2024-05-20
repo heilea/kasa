@@ -107,8 +107,7 @@
             background-color: #FF6060;
             color: white;
             margin: 0;
-            padding: 2px 3vw;
-            height: 3.3vh;
+            padding: 2px 2vw;
             font-size: 1rem;
             font-weight: 700;
             display: flex;
@@ -179,7 +178,6 @@
 
     .info-section3 {
       $duration-time: 1s;
-      margin-bottom: 3%;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
@@ -192,7 +190,7 @@
 }
 
 /****** TABLET ******/
-@media (min-width: 768px) and (max-width: 1024px) {
+/*@media (min-width: 768px) and (max-width: 1024px) {
   .CardsPage {
 
     .img-div {
@@ -351,6 +349,8 @@
             p {
               font-size: 0.655rem;
               margin-bottom: 15px;
+              border-radius: 5px;
+              padding: 2px 3vw;
             }
           }
         }
